@@ -9,11 +9,15 @@
 '''
 def InputKoordinate():
     try:
+        msg='Ошибка ввода! Введено не целочисленное значение! Повторите ввод: '
         number=input()
         if int(number)!=0:
             return int(number)
-    except:
-        print('Ошибка ввода! Введено не целочисленное значение! Повторите ввод: ',end='')
+        elif int(number)==0:
+            print(msg,end='')
+            return InputKoordinate()
+    except: 
+        print(msg,end='')
         return InputKoordinate()   
 def QuarterHardness(x,y):  
     if x>0 and y>0: result='1 четверть'
