@@ -19,7 +19,7 @@ def FindPositionStr(list):
     except:
         return f': {list}, ищем {findWord}, ответ: -1'
 UserLibrary={}
-with open('data.json', 'r', encoding='utf-8') as f:
-    UserLibrary=json.load(f)
+with open('spisok.json', 'r', encoding='utf-8') as f:
+    UserLibrary = json.load(f)
 for x,y in UserLibrary.items():
     print(x,FindPositionStr(y))
