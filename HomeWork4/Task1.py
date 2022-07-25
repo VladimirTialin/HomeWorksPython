@@ -26,7 +26,7 @@ def Pi():
     return pi
 def RoundPi(d):
     count=1
-    if 10**(-10)<=d<=10**(-1):
+    if Decimal(10**(-10))<=d<=10**(-1):
         while d<1:
             d*=10
             count*=10        
