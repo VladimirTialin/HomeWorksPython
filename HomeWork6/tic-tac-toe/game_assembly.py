@@ -15,7 +15,10 @@ def game():
         if count>3:
             win=gw.Winner(field)
             if win:
-                print('Вы победили!')
+                DrawField()
+                if win=='X':
+                    print(f'Битва окончена: {name1} - победил!')
+                else: print(f'Битва окончена: {name2} - победил!')
                 break
         count+=1
         if count>7:
