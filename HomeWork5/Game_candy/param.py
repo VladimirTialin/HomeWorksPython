@@ -3,8 +3,8 @@ from random import randint
 def number_of_candies(comment):
     try:
         n=int(input(comment))
-        if n<1:
-            print('Ошибка! Конфет не может быть меньше 1.')
+        if n<2:
+            print('Ошибка! Конфет не может быть меньше 2.')
             return number_of_candies(comment)
         else: return n
     except:

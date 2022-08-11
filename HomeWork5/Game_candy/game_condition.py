@@ -14,7 +14,7 @@ def game():
           if users[temp%2]=='Гоша':
                step=EasyBot(maxStep)
                print(step)
-          if users[temp%2]=='Петрович':
+          elif users[temp%2]=='Петрович':
                step=MegaBot(candy,maxStep)
                print(step)          
           else:
