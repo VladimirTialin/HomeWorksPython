@@ -1,3 +1,0 @@
-import control
-
-control.run()
