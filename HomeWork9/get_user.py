@@ -4,7 +4,7 @@ def GetFromUser(player,symbol):
     move='XO'    
     while True:
         getSymbol=input(f'{player}. Ваш ход: {symbol}? ')
-        if not (getSymbol in numbers) or 1<int(getSymbol)>9:
+        if not (getSymbol in numbers):
             print('Ошибка! Повторите ввод!')
             continue
         getSymbol=int(getSymbol)
