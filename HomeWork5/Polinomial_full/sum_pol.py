@@ -1,6 +1,5 @@
 def SumDict(dict1, dict2):
     resDict = {}
-    print(dict1,dict2)
     for i in range(len(dict1)+len(dict2)):
         if i in dict1.keys() and i not in dict2.keys():
             resDict[i]=dict1[i]

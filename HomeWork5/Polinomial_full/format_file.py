@@ -1,8 +1,7 @@
-# Форматируем многочлен для удобства работы
+from controller import*
 def FormatFile(file):
     import re
     file=re.sub("[ |*]",'',file)
-    print(file)
     return file.replace('+x','+1 x').replace('-x','-1 x').replace('^','^ ').replace('-',' -').replace('x',' x').replace('+',' ').split()
 
 def UserDict(temp):
@@ -25,9 +24,9 @@ def ResultOutput(dict):
             value*=(-1)
         if value==1 or value==0: value=''   
         if key>1:
-            result += str(value)+'*x^'+str(key)+sign
+            result += str(value)+'x^'+str(key)+sign
         else:
             match key:
-                case 1: result +=  str(value)+'*x'
-                case 0: result += sign+str(value)
+                case 1: result +=  str(value)+'x'+sign
+                case 0: result = str(value)
     return result  

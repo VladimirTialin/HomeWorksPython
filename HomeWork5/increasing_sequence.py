@@ -1,4 +1,4 @@
-list=[1,3,0,1,2,36,6,5,4,3]
+list=[1,3,1,2,9,6,5,4,3]
 def find_of_sequence(list):
     list=sorted(set(list))
     result=[]
